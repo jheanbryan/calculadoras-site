@@ -27,58 +27,58 @@
 
             <form action="" class="form-flex-col">
                 <label for="peso">Peso</label>
-                <input type="text" name="peso" id="" class="input">
+                <input type="text" name="peso" id="peso" class="input">
     
                 <label for="altura">Altura</label>
-                <input type="number" name="altura" id="" class="input">
+                <input type="number" name="altura" id="altura" class="input">
     
                 
                 <label for="idade">Idade</label>
-                <input type="number" name="idade" id="" class="input">
+                <input type="number" name="idade" id="idade" class="input">
     
                 
                 <span>Sexo</span>
                 <div>
                     <div class="container-flex">
-                        <input type="radio" name="" id="">
-                        <label for="">Masculino</label>
+                        <input type="radio" name="sexo" id="masculino" required>
+                        <label for="masculino">Masculino</label>
                     </div>
     
-                    <div class="container-flex">
-                        <input type="radio" name="" id="">
-                        <label for="">Feminino</label>
+                    <div class="container-flex"> 
+                        <input type="radio" name="sexo" id="feminino" required>
+                        <label for="feminino">Feminino</label>
                     </div>
                 </div>
 
                 <span>Atividade</span>
                 <div>
                     <div class="container-flex">
-                        <input type="radio" name="" id="">
-                        <label for="">Sedentário</label>
+                        <input type="radio" name="nivel-atividade" id="sedentario" required>
+                        <label for="sedentario">Sedentário</label>
                     </div>
 
                     <div class="container-flex">
-                        <input type="radio" name="" id="">
-                        <label for="">Levemente ativo</label>
+                        <input type="radio" name="nivel-atividade" id="levemente-ativo" required>
+                        <label for="levemente-ativo">Levemente ativo</label>
                     </div>
 
                     <div class="container-flex">
-                        <input type="radio" name="" id="">
-                        <label for="">Moderadamente ativo</label>
+                        <input type="radio" name="nivel-atividade" id="moderadamente-ativo" required>
+                        <label for="moderadamente-ativo">Moderadamente ativo</label>
                     </div>
 
                     <div class="container-flex">
-                        <input type="radio" name="" id="">
-                        <label for="">Muito ativo</label>
+                        <input type="radio" name="nivel-atividade" id="muito-ativo" required>
+                        <label for="muito-ativo">Muito ativo</label>
                     </div>
 
                     <div class="container-flex">
-                        <input type="radio" name="" id="">
-                        <label for="">Extremamente ativo</label>
+                        <input type="radio" name="nivel-atividade" id="extremamente-ativo" required>
+                        <label for="extremamente-ativo">Extremamente ativo</label>
                     </div>
                 </div>
             
-                <button class="btn-calcular">Calcular</button>
+                <button class="btn-calcular" id="btn-calcular" type="submit">Calcular</button>
             </form>
         </section>
     </main>
@@ -101,5 +101,6 @@
             <span>@JheanBryan</span>
         </div>
     </footer>
+    <script src="src/tmb.js"></script>
 </body>
 </html>
