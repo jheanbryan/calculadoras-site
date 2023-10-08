@@ -17,12 +17,41 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    position: relative;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    max-height: 40px;
+}
+#iconBars, #iconX{
+    width: 100%;
+    cursor: pointer;
+}
+#iconX{
+    display: none;
 }
 ul{
-    display: flex;
     gap: 20px;
+    position: absolute;
+    width: 100vh;
+    right: -900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #404040;
+    transition: 1s;
     list-style: none;
 }
-nav a{
+ul a{
     text-decoration: none;
+    padding: 25px;
+    text-align: center;
+    font-size: 1.2em;
+}
+ul a:hover{
+    background-color: white;
+}
+ul a:hover li{
+    color: black;
 }
