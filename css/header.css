@@ -42,12 +42,13 @@ ul{
     background-color: #404040;
     transition: 1s;
     list-style: none;
-    height: 100vh;
+    height: 80vh;
 }
 ul a{
     text-decoration: none;
     text-align: center;
     font-size: 1.2em;
+    padding: 40px;
 }
 ul a:hover{
     background-color: white;

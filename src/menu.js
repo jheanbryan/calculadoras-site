@@ -13,6 +13,7 @@ iconeBars.addEventListener('click', function(){
 iconeX.addEventListener('click', function(){
     iconeBars.style.display = 'block';
     iconeX.style.display = 'none';
+    
     menu.style.right = '-900px';
 });
 
