@@ -1,6 +1,6 @@
-let genero;
 const btn = document.getElementById('btn-calcular');
 const resultado = document.getElementById('resultado');
+
 btn.addEventListener('click',function(e){
     e.preventDefault();
 
@@ -15,6 +15,6 @@ btn.addEventListener('click',function(e){
     } else if(document.getElementById('feminino').checked){
         let tmbMulher = (665 + 9.6 * peso + 1.8 * altura - 4.7 * idade).toFixed(2);
         console.log(tmbMulher);
-        resultado.innerText = `${tmbMulher}Kcal`
+        resultado.innerText = `TMB: ${tmbMulher}Kcal`
     }
 })

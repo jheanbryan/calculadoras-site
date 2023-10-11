@@ -23,6 +23,7 @@ nav{
 .icons{
     display: flex;
     max-height: 40px;
+    max-width: 40px;
 }
 #iconBars, #iconX{
     width: 100%;
@@ -32,7 +33,6 @@ nav{
     display: none;
 }
 ul{
-    gap: 20px;
     position: absolute;
     width: 100vh;
     right: -900px;
@@ -42,10 +42,10 @@ ul{
     background-color: #404040;
     transition: 1s;
     list-style: none;
+    height: 100vh;
 }
 ul a{
     text-decoration: none;
-    padding: 25px;
     text-align: center;
     font-size: 1.2em;
 }
@@ -54,4 +54,10 @@ ul a:hover{
 }
 ul a:hover li{
     color: black;
+}
+
+@media (max-width:600px) {
+    ul{
+        width: 100%;
+    }
 }
